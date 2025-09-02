@@ -1,0 +1,106 @@
+name: 버그 신고
+description: 버그를 발견했을 때 사용하세요
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        버그 신고해주셔서 감사합니다. 아래 양식을 작성해주세요.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 버그 설명
+      description: 발생한 버그에 대해 명확하고 간결하게 설명해주세요.
+      placeholder: 버그에 대한 설명을 작성해주세요...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: 재현 방법
+      description: 버그를 재현하는 단계를 설명해주세요.
+      placeholder: |
+        1. '...'로 이동
+        2. '...'을 클릭
+        3. 아래로 스크롤하여 '...'
+        4. 오류 확인
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 예상 동작
+      description: 예상했던 동작을 명확하고 간결하게 설명해주세요.
+      placeholder: 예상했던 동작을 설명해주세요...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 실제 동작
+      description: 실제로 일어난 일을 설명해주세요.
+      placeholder: 실제로 일어난 일을 설명해주세요...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 스크린샷
+      description: 가능하다면 문제를 설명하는 스크린샷을 추가해주세요.
+      placeholder: 여기에 스크린샷을 첨부하거나 드래그 앤 드롭하세요.
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 브라우저
+      description: 어떤 브라우저에서 문제가 발생했나요?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Microsoft Edge
+        - 기타
+    validations:
+      required: true
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: 브라우저 버전
+      description: 브라우저 버전을 입력해주세요.
+      placeholder: 예) Chrome 91.0.4472.124
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 운영체제
+      description: 어떤 운영체제를 사용하고 계신가요?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - iOS
+        - Android
+        - 기타
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: 운영체제 버전
+      description: 운영체제 버전을 입력해주세요.
+      placeholder: 예) Windows 10, macOS 12.3, Ubuntu 20.04
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 추가 정보
+      description: 이 문제에 대한 다른 컨텍스트나 추가 정보를 여기에 추가하세요.
+      placeholder: 추가 정보가 있다면 여기에 작성해주세요...

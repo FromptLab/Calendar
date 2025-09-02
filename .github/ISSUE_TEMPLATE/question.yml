@@ -1,0 +1,60 @@
+name: 질문
+description: 프로젝트에 대해 질문이 있을 때 사용하세요
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        질문해주셔서 감사합니다. 아래 양식을 작성해주세요.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문 내용
+      description: 질문을 명확하고 구체적으로 작성해주세요.
+      placeholder: 무엇이 궁금하신가요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 배경 정보
+      description: 질문과 관련된 배경 정보나 상황을 설명해주세요.
+      placeholder: 어떤 상황에서 이 질문이 생겼나요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-tried
+    attributes:
+      label: 시도해본 것들
+      description: 이미 시도해본 방법이나 찾아본 정보가 있다면 설명해주세요.
+      placeholder: 어떤 시도를 해보셨나요?
+
+  - type: textarea
+    id: expected-answer
+    attributes:
+      label: 기대하는 답변
+      description: 어떤 종류의 답변을 기대하시나요?
+      placeholder: 예) 코드 예제, 설명, 참고 문서 링크 등
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 긴급도
+      description: 이 질문의 긴급도는 어느 정도인가요?
+      options:
+        - 낮음 - 언제든지 괜찮습니다
+        - 보통 - 며칠 내에 답변받고 싶습니다
+        - 높음 - 빠른 답변이 필요합니다
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 추가 정보
+      description: 질문과 관련된 추가 정보, 스크린샷, 코드 등이 있다면 여기에 추가해주세요.
+      placeholder: 추가 정보가 있다면 여기에 작성해주세요...
