@@ -1,0 +1,31 @@
+{
+  "Import styled": {
+    "prefix": "ist",
+    "body": ["import { styled } from '@/shared/ui/styled'"],
+    "description": "Import styled from shared UI"
+  },
+  "Emotion Styled": {
+    "prefix": "est", 
+    "body": ["const ${1:Component} = styled.${2:View}\\`", "  ${3}", "\\`"],
+    "description": "Create emotion styled component"
+  },
+  "Emotion Styled with Props": {
+    "prefix": "estp",
+    "body": [
+      "const ${1:Component} = styled.${2:View}<{ ${3:prop}: ${4:string} }>\\`",
+      "  ${5}",
+      "\\`"
+    ],
+    "description": "Create emotion styled component with props"
+  },
+  "Emotion CSS": {
+    "prefix": "ecss",
+    "body": ["css\\`", "  ${1}", "\\`"],
+    "description": "Emotion css template literal"
+  },
+  "Import css": {
+    "prefix": "icss", 
+    "body": ["import { css } from '@/shared/ui/styled'"],
+    "description": "Import css from shared UI"
+  }
+}
