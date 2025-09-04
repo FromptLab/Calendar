@@ -1,6 +1,6 @@
-import { styled } from "@/shared/ui/styled";
-import { router } from "expo-router";
-import { TouchableOpacity } from "react-native";
+import { router } from 'expo-router';
+import { TouchableOpacity } from 'react-native';
+import { styled } from '../src/shared/ui/styled';
 
 const Container = styled.View`
   flex: 1;
@@ -18,7 +18,7 @@ export default function Index() {
     <Container>
       <StyledText>루트 페이지</StyledText>
       <TouchableOpacity
-        onPress={() => router.push("/(protected)/(tabs)/(home)")}
+        onPress={() => router.push('/(protected)/(tabs)/(home)')}
       >
         <StyledText>보호 페이지로 이동</StyledText>
       </TouchableOpacity>
